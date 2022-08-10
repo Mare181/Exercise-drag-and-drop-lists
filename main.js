@@ -59,10 +59,50 @@ function dragEnd() {
 	console.log('drag ended');
 	this.className = 'element'
 	dragElement = null;
+	
+	//izbris prejšnjih izpisov elementov v listu 1
+	var izbris = document.getElementById('tekst1');
+	while(izbris.firstChild){
+		izbris.removeChild(izbris.firstChild);
+	}
+	
+	//izpis trenutnih elementov v listu 1
+	var izpisTeksta1 = document.getElementById("tekst1");
+	var elementiLista1 = document.getElementById("list1").querySelectorAll(".element");
+	for(let i = 0; i< elementiLista1.length; i++){
+		izpisTeksta1.innerText += elementiLista1[i].innerText;
+	}
+	
+	//izbris prejšnjih izpisov elementov v listu 2
+	var izbris2 = document.getElementById('tekst2');
+	while(izbris2.firstChild){
+		izbris2.removeChild(izbris2.firstChild);
+	}
+	
+	//izpis trenutnih elementov v listu 2
+	var izpisTeksta2 = document.getElementById("tekst2");
+	var elementiLista2 = document.getElementById("list2").querySelectorAll(".element");
+	for(let i = 0; i< elementiLista2.length; i++){
+		izpisTeksta2.innerText += elementiLista2[i].innerText;
+	}
 }
 
 //funkcija dragDrop
 function dragDrop() {
 	console.log('drag dropped');
 	this.append(dragElement);
+}
+
+//izpis elementov v listu 1 ob nalaganju strani
+var izpisTeksta1 = document.getElementById("tekst1");
+var elementiLista1 = document.getElementById("list1").querySelectorAll(".element");
+for(let i = 0; i< elementiLista1.length; i++){
+	izpisTeksta1.innerText += elementiLista1[i].innerText;
+}
+
+//izpis elementov v listu 2 ob nalaganju strani
+var izpisTeksta2 = document.getElementById("tekst2");
+var elementiLista2 = document.getElementById("list2").querySelectorAll(".element");
+for(let i = 0; i< elementiLista2.length; i++){
+	izpisTeksta2.innerText += elementiLista2[i].innerText;
 }
