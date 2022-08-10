@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drag and drop lists</title>
+	</head>
+	
+	<body>
+		<div class="container">
+			<!-- Prvi seznam -->
+			<div class="column" id="list1">
+				<h1>Required technologies</h1>
+					<div draggable="true" class="element">El 1</div>
+					<div draggable="true" class="element">El 2</div>
+					<div draggable="true" class="element">El 3</div>
+			</div>
+			
+			<!-- Drugi seznam -->
+			<div class="column" id="list2">
+				<h1>Used technologies</h1>
+				<div draggable="true" class="element">El A</div>
+				<div draggable="true" class="element">El B</div>
+				<div draggable="true" class="element">El C</div>
+			</div>
+		</div>
+		
+		<br>
+		
+		<div class="container">
+			<!-- Polje za izpis elementov prvega seznama -->
+			<div class="column1">
+				<h1>Here are elements from list 1:</h1>
+				<div id="tekst1"></div>
+			</div>
+
+			<!-- Polje za izpis elementov drugega seznama -->			
+			<div class="column1">
+				<h1>Here are elements from list 2:</h1>
+				<div id="tekst2"></div>
+			</div>
+		</div>
+	</body>
+</html>
