@@ -25,30 +25,25 @@ columns.forEach(column => {
 
 //funkcija dragEnter
 function dragEnter() {
-	console.log('drag entered');
 }
 	
 //funkcija dragLeave
 function dragLeave() {
-	console.log('drag left');
 }
 
 //funkcija dragDrop
 function dragDrop() {
-	console.log('drag dropped');
 }
 
 //funkcija dragOver
 function dragOver(e) {
 	e.preventDefault()
-	console.log('drag over');
 }
 
 let dragElement = null;
 
 //funkcija dragStart, ki naredi element, ki ga vlečemo neviden
 function dragStart() {
-	console.log('drag started');
 	dragElement = this;
 	setTimeout(() => this.className = 'invisible', 0)
 }
@@ -56,7 +51,6 @@ function dragStart() {
 //funkcija dragEnd, ki postavi element, ki smo ga vlekli na novo mesto
 //in izpiše vse elemente iz obeh seznamov
 function dragEnd() {
-	console.log('drag ended');
 	this.className = 'element'
 	dragElement = null;
 	
@@ -89,7 +83,6 @@ function dragEnd() {
 
 //funkcija dragDrop
 function dragDrop() {
-	console.log('drag dropped');
 	this.append(dragElement);
 }
 
