@@ -12,7 +12,7 @@ Open index.html file in your preferred browser.
 
 Drag elements from one list to the other and follow link to learn more about certain technology.
 
-![Image showing drag and drop lists](drag_and_drop.jpg?raw=true "Drag and drop lists")
+![Image showing drag and drop lists](drag_and_drop.png?raw=true "Drag and drop lists")
 
 ## References
 
